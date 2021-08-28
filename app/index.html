@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="./style.css">
+    <title>App de productos</title>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-light bg-light">
+        <a href="#" class="navbar-brand mx-3">
+            App de Productos
+        </a>
+    </nav>
+    <!-- NAVIGATION -->
+
+    <div class="container">
+
+        <div id="app">
+            <div class="row pt-5">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Add a Product</h4>
+                        </div>
+                        <form id="product-form" class="card-body">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="name" autocomplete="off" placeholder="Product name">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input class="form-control" type="number" step="0.01" id="price" placeholder="Product price">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input class="form-control" type="number" id="year" min="1900" max="2050" value="2021" placeholder="Product year">
+                            </div>
+                            <input type="submit" value="Save" class="btn btn-primary form-control mt-3">
+                        </form>
+                    </div>
+                </div>
+
+                <div id="product-list" class="col-md-8"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
